@@ -1,5 +1,5 @@
 {
-  "name": "pi-figma-mcp",
+  "name": "pi-figma-remote",
   "version": "0.1.0",
   "description": "Official Figma MCP server for the Pi coding agent — design-to-code, canvas writes, FigJam and Code Connect over OAuth. No API key needed.",
   "keywords": [
@@ -17,9 +17,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shahriar374/pi-figma-mcp.git"
+    "url": "git+https://github.com/shahriar374/pi-figma-remote.git"
   },
-  "homepage": "https://github.com/shahriar374/pi-figma-mcp#readme",
+  "homepage": "https://github.com/shahriar374/pi-figma-remote#readme",
   "pi": {
     "mcp": "./mcp.json"
   }

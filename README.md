@@ -1,4 +1,4 @@
-# pi-figma-mcp
+# pi-figma-remote
 
 The **official** Figma MCP server (`https://mcp.figma.com/mcp`) for the
 [Pi coding agent](https://pi.dev) — one command to install, browser click to
@@ -6,10 +6,10 @@ authenticate, full toolset unlocked: design-to-code, canvas writes, FigJam,
 design-system search, and Code Connect. No Personal Access Token needed.
 
 ```bash
-pi install npm:pi-figma-mcp
+pi install npm:pi-figma-remote
 ```
 
-Then restart pi, run `/mcp`, and authenticate `pi-figma-mcp__figma`.
+Then restart pi, run `/mcp`, and authenticate `pi-figma-remote__figma`.
 
 ## Why this exists
 
@@ -43,7 +43,7 @@ secret-free; there is nothing to paste and no helper script to run.
 ## Install
 
 ```bash
-pi install npm:pi-figma-mcp
+pi install npm:pi-figma-remote
 ```
 
 Restart pi (or `/reload`), then:
@@ -52,7 +52,7 @@ Restart pi (or `/reload`), then:
 /mcp
 ```
 
-Start/authenticate `pi-figma-mcp__figma` → approve in the browser → done.
+Start/authenticate `pi-figma-remote__figma` → approve in the browser → done.
 Tokens are stored in your OS keychain and refresh automatically.
 
 ## Verify
