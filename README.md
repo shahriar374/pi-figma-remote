@@ -76,6 +76,31 @@ servers expose:
   `get_code_connect_map`, `add_code_connect_map`
 - **Account**: `whoami`
 
+## Prior art — read this first
+
+This is not the only way to get the official Figma server into pi, and
+it was not the first. [`pi-figma-remote-auth`](https://pi.dev/packages/pi-figma-remote-auth)
+(by diantama) predates this package and does the same job via an
+*extension*: slash commands (`/figma-remote-auth setup`, `login`, `logout`)
+that write the MCP config and run the OAuth flow (registering as `"Codex"`)
+for you. It has real usage and more features (project/shared config targets,
+`--direct-tools` flags, logout). If you want the full-featured route, start there.
+
+This package exists as the minimal alternative for one reason: **it contains
+zero executable code** — just `mcp.json` plus `package.json`. No third-party
+code runs on your machine, there is nothing to security-review beyond two
+JSON files, and it rides entirely on `pi-mcp-adapter`'s native OAuth flow
+(discovery → registration → browser → OS-keychain storage → automatic
+refresh), so there is less to break across adapter upgrades. The price of
+that minimalism: no helper commands, no logout, no per-project targets —
+just `/mcp` → authenticate.
+
+> **Not to be confused with:** `pi-figma-remote-auth` (extension, Codex
+> name) vs this package, `pi-figma-remote` (config-only, Claude Code name).
+> Similar names, same endpoint, different tradeoffs. There is also an
+> unrelated `pi-figma-mcp`, which targets the local Figma *desktop* bridge
+> rather than the remote server.
+
 ## Disclosure — read this
 
 This package registers with Figma's OAuth endpoint using another client's

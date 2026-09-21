@@ -1,6 +1,6 @@
 {
   "name": "pi-figma-remote",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official Figma MCP server for the Pi coding agent — design-to-code, canvas writes, FigJam and Code Connect over OAuth. No API key needed.",
   "keywords": [
     "pi-package",
