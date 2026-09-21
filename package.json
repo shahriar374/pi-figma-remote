@@ -1,0 +1,26 @@
+{
+  "name": "pi-figma-mcp",
+  "version": "0.1.0",
+  "description": "Official Figma MCP server for the Pi coding agent — design-to-code, canvas writes, FigJam and Code Connect over OAuth. No API key needed.",
+  "keywords": [
+    "pi-package",
+    "figma",
+    "mcp",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "author": "Shahriar Kabir",
+  "files": [
+    "mcp.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahriar374/pi-figma-mcp.git"
+  },
+  "homepage": "https://github.com/shahriar374/pi-figma-mcp#readme",
+  "pi": {
+    "mcp": "./mcp.json"
+  }
+}
